@@ -30,50 +30,51 @@ function toggle(){
         </div>
         
         <div class = "main">
-          <div>
+        <div>
             <h5>${inputfields["fname"].value} ${inputfields["lname"].value}</h5>
             <p>${inputfields["address"].value}</p>
             <p>${inputfields["mobile"].value}</p>
             <p>${inputfields["email"].value}</p>
-
+            
             <h4>Objective</h4>
             <p>${inputfields["objective"].value}</p>
             
             <h4>Skills</h4>
-            <p>${inputfields["Skill1"].value}</p>
-            <p>${inputfields["Skill2"].value}</p>
-            <p>${inputfields["Skill3"].value}</p>
-            
+            <p>${inputfields["Skill1"].value}, ${inputfields["Skill2"].value}, ${inputfields["Skill3"].value}</p>
+
+            <h4>Personal Qualities</h4>
+            <p>${inputfields["pq1"].value}, ${inputfields["pq2"].value}, ${inputfields["pq3"].value}</p>
                        
           </div>
             
+        
           <div> 
-            <br><br><br><br>
+            <h4>Educational Qualifications</h4>
+            <p>${inputfields["course"].value} -
+            ${inputfields["discipline"].value} -
+            ${inputfields["univ"].value} -
+            ${inputfields["year"].value} -
+            ${inputfields["grade"].value}</p>
+            
+            <p>${inputfields["course2"].value} -
+            ${inputfields["discipline2"].value} -
+            ${inputfields["univ2"].value} -
+            ${inputfields["year2"].value} -
+            ${inputfields["grade2"].value}</p>
+            
             <h4>Work Experience</h4>
             <p>${inputfields["designation"].value}</p>
             <p>${inputfields["experience"].value}</p>
 
-            <h4>Educational Qualifications</h4>
-            <p>${inputfields["course"].value}</p>
-            <p>${inputfields["discipline"].value}</p>
-            <p>${inputfields["univ"].value}</p>
-            <p>${inputfields["year"].value}</p>
-            <p>${inputfields["grade"].value}</p>
-            
-            <p>${inputfields["course2"].value}</p>
-            <p>${inputfields["discipline2"].value}</p>
-            <p>${inputfields["univ2"].value}</p>
-            <p>${inputfields["year2"].value}</p>
-            <p>${inputfields["grade2"].value}</p>
-            
             <h4>Projects</h4>
                 ${workExpdetails.getData()}
-            
-            
-          </div>
+      
             
           </div>
-        <div class="btn">
+
+        </div>
+        
+          <div class="btn">
         <button onclick="print()">Print Resume</button>
       </div>
 
