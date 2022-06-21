@@ -1,0 +1,183 @@
+body{
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+#marg {
+  margin: 560px 30px 30px 30px;
+}
+
+.jumbotron1{
+  margin: 800px 30px 30px 30px;
+}
+
+.jumbotron {
+
+  /* to make edge on the corner */
+
+  border-style: solid;
+  border-radius: 10px;
+
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.jumbotron {
+  border: 1px solid green;
+  background-color: forestgreen;
+  margin: 10px;
+  padding: 20px;
+
+  /* To apply single side shadow */
+  box-shadow: 10px 20px 15px 3px black;
+
+ }
+
+ .jumbotron1{
+  margin: 20px 30px 30px 30px;
+}
+
+
+  strong{
+    font-weight: 600;
+    color: #8000a0;
+}
+.footer{
+    background: #111;
+    color: #777;
+    padding: 10px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+.detail-form{
+    background: #fff;
+    margin: 0px 20px;
+    padding: 20px 30px;
+    border: 3px solid #fff;
+}
+
+.detail-form{
+   margin-top: 0px; 
+  }
+
+.form-subhead{
+    font-weight: 400;
+    color: #555;
+}
+.form-row{
+    margin: 20px 10px;
+}
+.form-row button{
+    margin: 20px auto;
+    align-self: center;
+}
+
+
+/* new carousel*/
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+  background-color: #111;
+}
+
+.div1{
+  width: 550px;
+  height: 505px;
+  border:5px solid #fff;
+  position: absolute;
+top: 60%; left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.slide{
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+}
+
+.slide img{
+width: 100%; height: 100%;
+user-select: none;
+}
+
+input[type="radio"]{
+display: none;   /*hiding the radio buttons*/
+}
+
+
+/* the prev and next buttons */
+#prev,#next{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border:3px solid #111;
+background-color:#fff;
+cursor: pointer;
+}
+
+#prev{
+left: 3px;
+}
+
+#next{
+right: 3px;
+}
+
+
+label span{
+color: #111;
+position: absolute;
+top: 49%; left: 50%;
+transform: translate(-50%,-50%);
+font-family: 'Arial Black';
+user-select: none;
+font-size:23px;
+}
+
+
+#radio1:checked ~ .one{
+z-index: 2;
+}
+
+#radio2:checked ~ .two{
+z-index: 2;
+}
+
+#radio3:checked ~ .three{
+z-index: 2;
+}
+
+#radio4:checked ~ .four{
+z-index: 2;
+}
+
+
+/* resume print style code*/
+
+.hero{
+  background-color: rgb(85, 85, 85);
+  text-align: center;
+  padding: 10px;
+  color:rgb(255, 255, 255)
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: white;
+
+}
+
+  
+  .btn{
+    text-align: center;
+    margin: 2px;
+}
