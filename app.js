@@ -1,30 +1,34 @@
-const inputfields =document.querySelector(".detail-form");
-const output =document.querySelector(".output");
+const inputfields = document.querySelector(".detail-form");
+const output = document.querySelector(".output");
 
 let inputShow = true;
 
-// to reuse the same function code for other input fields 
-async function TextEditor(element){
-  const newEditor =  await ClassicEditor
-  .create(element,{
-    toolbar: [ 'heading', 'bold', 'italic', 'bulletedList', 'numberedList', 'blockQuote' ],
-  } )
-  return newEditor
- 
+// to reuse the same function code for other input fields
+async function TextEditor(element) {
+  const newEditor = await ClassicEditor.create(element, {
+    toolbar: [
+      "heading",
+      "bold",
+      "italic",
+      "numberedList",
+      "bulletedList",
+      "blockQuote",
+    ],
+  });
+  return newEditor;
 }
 
 let workExpdetails;
-TextEditor(inputfields["projects1"]).then(nEditor=>{
-  workExpdetails = nEditor
-})
+TextEditor(inputfields["projects1"]).then((nEditor) => {
+  workExpdetails = nEditor;
+});
 
+function toggle() {
+  if (inputShow) {
+    inputfields.style.display = "none";
+    inputShow = false;
 
-function toggle(){
-  if(inputShow){
-      inputfields.style.display = "none";
-      inputShow = false;
-        
-      output.innerHTML = `
+    output.innerHTML = `
         <div class = "hero">
         <h1>${inputfields["designation"].value}</h1>
         </div>
@@ -40,10 +44,14 @@ function toggle(){
             <p>${inputfields["objective"].value}</p>
             
             <h4>Skills</h4>
-            <p>${inputfields["Skill1"].value}, ${inputfields["Skill2"].value}, ${inputfields["Skill3"].value}</p>
+            <p>${inputfields["Skill1"].value}, ${
+              inputfields["Skill2"].value
+            }, ${inputfields["Skill3"].value}</p>
 
             <h4>Personal Qualities</h4>
-            <p>${inputfields["pq1"].value}, ${inputfields["pq2"].value}, ${inputfields["pq3"].value}</p>
+            <p>${inputfields["pq1"].value}, ${inputfields["pq2"].value}, ${
+              inputfields["pq3"].value
+            }</p>
                        
           </div>
             
@@ -79,9 +87,9 @@ function toggle(){
       </div>
 
          `;
-  }else{
+  } else {
     inputfields.style.display = "block";
-      inputShow = true;
-      output.innerHTML = "";
+    inputShow = true;
+    output.innerHTML = "";
   }
-  }
+}
