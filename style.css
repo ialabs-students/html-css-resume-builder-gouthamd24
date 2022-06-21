@@ -52,7 +52,7 @@ body{
 }
 
 .detail-form{
-    background: #fff;
+    background: #bee7c7;
     margin: 0px 20px;
     padding: 20px 30px;
     border: 3px solid #fff;
@@ -69,9 +69,20 @@ body{
 .form-row{
     margin: 20px 10px;
 }
-.form-row button{
+/* .form-row button{
     margin: 20px auto;
     align-self: center;
+} */
+
+.form-row button {
+  margin: 20px auto;
+  align-self: center;
+  background-color: #a1d0e1;
+  border-radius: 5px;
+  padding-block: inherit;
+  padding: inherit;
+  font-size: 15px;
+  font-family: cursive;
 }
 
 
@@ -83,7 +94,7 @@ body{
   background-color: #111;
 }
 
-.div1{
+/* .div1{
   width: 550px;
   height: 505px;
   border:5px solid #fff;
@@ -91,6 +102,17 @@ body{
 top: 60%; left: 50%;
 transform: translate(-50%,-50%);
 text-align: center;
+} */
+.div1 {
+  width: 719px;
+  height: 642px;
+  border: 5px solid #fff;
+  position: absolute;
+  top: 65%;
+  left: 48%;
+  /* bottom: 28%; */
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
 
 .slide{
